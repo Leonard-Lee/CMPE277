@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IoTAsyncTask</string>
+    <string name="titleLabel">The Sensor Driver</string>
+    <string name="temperatureLabel">Temperature:</string>
+    <string name="humidityLabel">Humidity: </string>
+    <string name="activityLabel">Activity: </string>
+    <string name="numLabel">Number: </string>
+    <string name="gen_btn">Generate</string>
+    <string name="cancel_btn">Cancel</string>
+</resources>
