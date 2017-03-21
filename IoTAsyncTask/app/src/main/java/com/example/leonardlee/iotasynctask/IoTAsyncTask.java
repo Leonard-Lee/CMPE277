@@ -32,7 +32,7 @@ public class IoTAsyncTask extends AsyncTask <Integer, SensorData, Integer> {
             try {
                 sleep(6000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                throw new RuntimeException("interrupted", e);
             }
 
             if(isCancelled()) {
