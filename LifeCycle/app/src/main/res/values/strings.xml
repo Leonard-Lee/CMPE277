@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LifeCycle</string>
+    <string name="title_activity_b">ActivityB</string>
+    <string name="btnB">ActivityB</string>
+    <string name="btnA">ActivityA</string>
+    <string name="btnlog">Dialog</string>
+    <string name="counter">Thread Counter:</string>
+    <string name="c">0000</string>
+    <string name="btnclose">Close App</string>
+    <string name="dialog">Simple dialog</string>
+    <string name="close">Close</string>
+    <string name="closeb">Finish B</string>
+</resources>
