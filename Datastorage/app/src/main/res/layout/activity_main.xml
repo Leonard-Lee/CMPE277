@@ -22,26 +22,29 @@
             android:text="@string/titleMain"/>
 
         <TextView
+            android:id="@+id/txtInsert"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
+            android:background="@drawable/custom_red_textview_layout"
+            android:gravity="center"
+            android:onClick="btnInsertClicked"
             android:text="INSERT NEW ITEM"
             android:textColor="@color/whiteColor"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/txtFan"
-            android:background="@drawable/custom_red_textview_layout"/>
+            android:textSize="30dp" />
+
         <TextView
+            android:id="@+id/txtSearch"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
-            android:text="SEARCH ITEM"
-            android:id="@+id/txtSprinkler"
-            android:textAllCaps="false"
-            android:textSize="30dp"
-            android:textColor="@color/whiteColor"
+            android:background="@drawable/custom_purple_textview_layout"
             android:gravity="center"
-            android:background="@drawable/custom_purple_textview_layout"/>
+            android:onClick="btnSearchClicked"
+            android:text="SEARCH ITEM"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="30dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

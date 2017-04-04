@@ -27,14 +27,15 @@
             android:layout_marginTop="20dp">
 
             <EditText
-                android:layout_width="match_parent"
                 android:id="@+id/txtSearch"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="@color/whiteColor"
-                android:lines="1"
                 android:digits="0123456789"
-                android:imeOptions="actionDone"/>
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:text="Samsung" />
         </LinearLayout>
 
         <LinearLayout

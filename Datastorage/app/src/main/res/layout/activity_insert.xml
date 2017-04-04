@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@color/blackColor"
@@ -30,15 +31,17 @@
                 android:textSize="20dp"
                 android:text="@string/lblName"
                 android:textColor="@color/whiteColor"/>
+
             <EditText
-                android:layout_width="match_parent"
                 android:id="@+id/txtName"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="@color/whiteColor"
-                android:lines="1"
                 android:digits="0123456789"
-                android:imeOptions="actionDone"/>
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:text="Samsung Galaxy S7" />
         </LinearLayout>
 
         <!--Item Description-->
@@ -54,15 +57,17 @@
                 android:layout_marginLeft="30dp"
                 android:text="@string/lblDescription"
                 android:textColor="@color/whiteColor"/>
+
             <EditText
+                android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/txtDescription"
-                android:lines="1"
-                android:digits="0123456789"
-                android:background="@color/whiteColor"
                 android:layout_marginLeft="10dp"
-                android:imeOptions="actionDone"/>
+                android:background="@color/whiteColor"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:text="Smartphone" />
         </LinearLayout>
 
         <!--Item Price-->
@@ -78,15 +83,17 @@
                 android:layout_marginLeft="30dp"
                 android:text="@string/lblPrice"
                 android:textColor="@color/whiteColor"/>
+
             <EditText
+                android:id="@+id/txtPrice"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/txtPrice"
-                android:lines="1"
-                android:digits="0123456789"
-                android:background="@color/whiteColor"
                 android:layout_marginLeft="10dp"
-                android:imeOptions="actionDone"/>
+                android:background="@color/whiteColor"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:text="599.99" />
         </LinearLayout>
 
         <!--Item Review-->
@@ -102,15 +109,17 @@
                 android:layout_marginLeft="30dp"
                 android:text="@string/lblReview"
                 android:textColor="@color/whiteColor"/>
+
             <EditText
+                android:id="@+id/txtReview"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/txtReview"
-                android:lines="1"
-                android:digits="0123456789"
-                android:background="@color/whiteColor"
                 android:layout_marginLeft="10dp"
-                android:imeOptions="actionDone"/>
+                android:background="@color/whiteColor"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:text="Excellent Phone" />
         </LinearLayout>
 
         <!--Buttons-->
@@ -120,25 +129,27 @@
             android:layout_marginTop="60dp"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal">
+
             <Button
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_button"
-                android:text="@string/search_btn"
+                android:onClick="btnInsertClicked"
+                android:text="@string/add_btn"
+                android:textAllCaps="false"
                 android:textColor="@color/whiteColor"
-                android:textAllCaps="false"
-                android:textSize="30dp"
-                android:onClick="btnSetClicked"/>
+                android:textSize="30dp" />
+
             <Button
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/cancel_btn"
-                android:background="@drawable/custom_button"
-                android:textSize="30dp"
                 android:layout_marginLeft="20dp"
+                android:background="@drawable/custom_button"
+                android:onClick="btnCancelClicked"
+                android:text="@string/cancel_btn"
+                android:textAllCaps="false"
                 android:textColor="@color/whiteColor"
-                android:onClick="btnCancelClicked" />
+                android:textSize="30dp" />
         </LinearLayout>
 
     </LinearLayout>
