@@ -66,17 +66,6 @@ public class MyService extends Service {
         Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
     }
 
-    private int DownloadFile(URL url) {
-        try {
-            //---simulate taking some time to download a file---
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return 100;
-    }
-
     private long DownloadbyURL(URL url) throws IOException {
         InputStream inputStream = null;
         HttpURLConnection connection = null;
