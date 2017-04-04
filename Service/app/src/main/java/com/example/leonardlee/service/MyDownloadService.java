@@ -4,36 +4,28 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Binder;
-import android.os.Environment;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Timer;
+
 
 /**
  * Created by leonardlee on 02/04/2017.
  */
 
-public class MyService extends Service {
-    int counter = 0;
+public class MyDownloadService extends Service {
     public URL[] urls;
-
-    static final int UPDATE_INTERVAL = 1000;
-    private Timer time = new Timer();
-
     private final IBinder binder = new MyBinder();
 
     public class MyBinder extends Binder {
-        MyService getService() {
-            return MyService.this;
+        MyDownloadService getService() {
+            return MyDownloadService.this;
         }
     }
 
@@ -55,7 +47,7 @@ public class MyService extends Service {
         for (int i=0; i < objUrls.length; i++) {
             urls[i] = (URL) objUrls[i];
         }
-        new DoBackgroundTask().execute(urls);
+        new BackgroundAsyncTask().execute(urls);
 
         return START_STICKY;
     }
@@ -100,7 +92,7 @@ public class MyService extends Service {
 
     }
 
-    private class DoBackgroundTask extends AsyncTask<URL, Integer, Long> {
+    private class BackgroundAsyncTask extends AsyncTask<URL, Integer, Long> {
         protected Long doInBackground(URL... urls) {
             int count = urls.length;
             long totalBytesDownloaded = 0;

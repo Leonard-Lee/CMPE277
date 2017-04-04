@@ -4,8 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.Binder;
-import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         String url5 = txtURL5.getText().toString();
 
         // DownloadService IntentService
-        Intent intent = new Intent(getBaseContext(), MyService.class);
+        Intent intent = new Intent(getBaseContext(), MyDownloadService.class);
 
         try {
             URL[] urls = new URL[] {new URL(url1), new URL(url2), new URL(url3), new URL(url4), new URL(url5)};

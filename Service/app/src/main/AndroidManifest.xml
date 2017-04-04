@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <!-- Declaring Service in Manifest -->
-        <service android:name=".MyService"></service>
+        <service android:name=".MyDownloadService"></service>
         <service android:name=".DownloadService"></service>
 
     </application>
