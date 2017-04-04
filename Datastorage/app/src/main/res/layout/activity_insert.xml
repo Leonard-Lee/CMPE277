@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/blackColor"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/whiteColor"
+            android:text="@string/title"/>
+
+        <!--Item Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/lblName"
+                android:textColor="@color/whiteColor"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtName"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/whiteColor"
+                android:lines="1"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <!--Item Description-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/lblDescription"
+                android:textColor="@color/whiteColor"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtDescription"
+                android:lines="1"
+                android:digits="0123456789"
+                android:background="@color/whiteColor"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <!--Item Price-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/lblPrice"
+                android:textColor="@color/whiteColor"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtPrice"
+                android:lines="1"
+                android:digits="0123456789"
+                android:background="@color/whiteColor"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <!--Item Review-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/lblReview"
+                android:textColor="@color/whiteColor"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtReview"
+                android:lines="1"
+                android:digits="0123456789"
+                android:background="@color/whiteColor"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <!--Buttons-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="@string/search_btn"
+                android:textColor="@color/whiteColor"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:onClick="btnSetClicked"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="@string/cancel_btn"
+                android:background="@drawable/custom_button"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/whiteColor"
+                android:onClick="btnCancelClicked" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

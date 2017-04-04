@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    tools:context="com.example.leonardlee.datastorage.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:text="INSERT NEW ITEM"
+            android:textColor="@color/whiteColor"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/txtFan"
+            android:background="@drawable/custom_red_textview_layout"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:text="SEARCH ITEM"
+            android:id="@+id/txtSprinkler"
+            android:textAllCaps="false"
+            android:textSize="30dp"
+            android:textColor="@color/whiteColor"
+            android:gravity="center"
+            android:background="@drawable/custom_purple_textview_layout"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
