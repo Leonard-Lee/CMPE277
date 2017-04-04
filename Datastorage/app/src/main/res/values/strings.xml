@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Datastorage</string>
+    <string name="add_btn">Add</string>
     <string name="search_btn">Search</string>
     <string name="cancel_btn">Cancel</string>
-    <string name="title">New Products Database</string>
+    <string name="titleMain">New Products Database</string>
+    <string name="titleInsert">Add New Product Item</string>
+    <string name="titleSearch">Search Item</string>
 
     <string name="lblName">Item Name</string>
     <string name="lblDescription">Item Description</string>
