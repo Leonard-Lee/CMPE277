@@ -21,6 +21,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String CONTACTS_COLUMN_REVIEW = "review";
 
     public DBHelper(Context context) {
+
         super(context, DATABASE_NAME, null, 1);
     }
 
